@@ -1,0 +1,2944 @@
+[ 2017-03-28T11:12:06+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/Admin/index
+[ log ] localhost/wstmart/index.php/Admin/index [运行时间：1.518087s][吞吐率：0.66req/s] [内存消耗：2,992.61kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/install/index.php?step=3',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:1.407081s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:06+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/index/login.html
+[ log ] localhost/wstmart/index.php/admin/index/login.html [运行时间：0.380022s][吞吐率：2.63req/s] [内存消耗：3,421.55kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/install/index.php?step=3',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.017001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.006000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.005000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004001s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:07+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/index/getverify.html
+[ log ] localhost/wstmart/index.php/admin/index/getverify.html [运行时间：0.417024s][吞吐率：2.40req/s] [内存消耗：2,035.12kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getverify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/login.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.027002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.010000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.007000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Base->getVerify[ D:\wamp32\www\wstmart\wstmart\admin\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/index/getVerify.html?rnd=0.2590470018919635
+[ log ] localhost/wstmart/index.php/admin/index/getVerify.html?rnd=0.2590470018919635 [运行时间：0.295017s][吞吐率：3.39req/s] [内存消耗：2,035.35kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getVerify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/login.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'rnd' => '0.2590470018919635',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.017001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.007000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.005001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Base->getVerify[ D:\wamp32\www\wstmart\wstmart\admin\controller\Base.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:24+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/checkLogin.html
+[ log ] localhost/wstmart/index.php/admin/index/checkLogin.html [运行时间：1.132065s][吞吐率：0.88req/s] [内存消耗：3,179.80kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/login.html',
+  'content-length' => '47',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'loginName' => 'admin',
+  'loginPwd' => '123456',
+  'verifyCode' => '2jn8',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.019002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.007000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.005001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->checkLogin[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:26+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/index/index.html
+[ log ] localhost/wstmart/index.php/admin/index/index.html [运行时间：0.317018s][吞吐率：3.15req/s] [内存消耗：3,389.88kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/login.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.005000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\index.html [ array (
+  0 => 'v',
+  1 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:27+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/getSubMenus.html
+[ log ] localhost/wstmart/index.php/admin/index/getSubMenus.html [运行时间：0.536031s][吞吐率：1.87req/s] [内存消耗：3,077.44kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getSubMenus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'content-length' => '4',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.026001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.021001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.010001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.007000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->getSubMenus[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:28+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/index/main.html
+[ log ] localhost/wstmart/index.php/admin/index/main.html [运行时间：0.695040s][吞吐率：1.44req/s] [内存消耗：3,410.70kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.017001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.005000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->main[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\main.html [ array (
+  0 => 'v',
+  1 => 'object',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:29+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/getVersion.html
+[ log ] localhost/wstmart/index.php/admin/index/getVersion.html [运行时间：0.609035s][吞吐率：1.64req/s] [内存消耗：2,318.02kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getVersion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/main.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.018001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.019001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.010001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.006000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->getVersion[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:42+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/getSubMenus.html
+[ log ] localhost/wstmart/index.php/admin/index/getSubMenus.html [运行时间：0.281016s][吞吐率：3.56req/s] [内存消耗：3,077.62kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getSubMenus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'content-length' => '5',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '35',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.012001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->getSubMenus[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:44+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/getSubMenus.html
+[ log ] localhost/wstmart/index.php/admin/index/getSubMenus.html [运行时间：0.283016s][吞吐率：3.53req/s] [内存消耗：3,077.78kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getSubMenus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'content-length' => '5',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '38',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.021001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->getSubMenus[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:46+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/index/getSubMenus.html
+[ log ] localhost/wstmart/index.php/admin/index/getSubMenus.html [运行时间：0.270015s][吞吐率：3.70req/s] [内存消耗：3,078.46kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getSubMenus',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'content-length' => '5',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.012001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.003000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->getSubMenus[ D:\wamp32\www\wstmart\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:49+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/accreds/index.html
+[ log ] localhost/wstmart/index.php/admin/accreds/index.html [运行时间：0.522030s][吞吐率：1.92req/s] [内存消耗：3,244.83kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'accreds',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.017001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.014001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.292017s ]
+[ info ] [ RUN ] wstmart\admin\controller\Accreds->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Accreds.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\accreds\list.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:50+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/Accreds/pageQuery.html
+[ log ] localhost/wstmart/index.php/admin/Accreds/pageQuery.html [运行时间：0.316018s][吞吐率：3.16req/s] [内存消耗：3,190.47kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Accreds',
+    2 => 'pageQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/accreds/index.html',
+  'content-length' => '18',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '50',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.021001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.015001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.010000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.006001s ]
+[ info ] [ RUN ] wstmart\admin\controller\Accreds->pageQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Accreds.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:55+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/shopapplys/index.html
+[ log ] localhost/wstmart/index.php/admin/shopapplys/index.html [运行时间：0.421024s][吞吐率：2.38req/s] [内存消耗：3,241.34kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopapplys',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.017001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.209012s ]
+[ info ] [ RUN ] wstmart\admin\controller\Shopapplys->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Shopapplys.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\shopapplys\list.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:12:56+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/shopapplys/pageQuery.html
+[ log ] localhost/wstmart/index.php/admin/shopapplys/pageQuery.html [运行时间：0.293017s][吞吐率：3.41req/s] [内存消耗：3,184.11kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shopapplys',
+    2 => 'pageQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/shopapplys/index.html',
+  'content-length' => '18',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '50',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.018001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.014001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004001s ]
+[ info ] [ RUN ] wstmart\admin\controller\Shopapplys->pageQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Shopapplys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:01+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/shops/stopIndex.html
+[ log ] localhost/wstmart/index.php/admin/shops/stopIndex.html [运行时间：0.547032s][吞吐率：1.83req/s] [内存消耗：3,262.98kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shops',
+    2 => 'stopIndex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.346020s ]
+[ info ] [ RUN ] wstmart\admin\controller\Shops->stopIndex[ D:\wamp32\www\wstmart\wstmart\admin\controller\Shops.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\shops\list_stop.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:02+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/shops/pageStopQuery.html
+[ log ] localhost/wstmart/index.php/admin/shops/pageStopQuery.html [运行时间：0.351020s][吞吐率：2.85req/s] [内存消耗：3,277.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shops',
+    2 => 'pageStopQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/shops/stopIndex.html',
+  'content-length' => '18',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '50',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.023001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.019001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.010000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.005000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Shops->pageStopQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Shops.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/goods/index.html
+[ log ] localhost/wstmart/index.php/admin/goods/index.html [运行时间：0.418024s][吞吐率：2.39req/s] [内存消耗：3,353.00kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.024001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.018001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.008000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.103006s ]
+[ info ] [ RUN ] wstmart\admin\controller\Goods->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Goods.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\goods\list_sale.html [ array (
+  0 => 'v',
+  1 => 'areaList',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:09+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/goods/saleByPage.html
+[ log ] localhost/wstmart/index.php/admin/goods/saleByPage.html [运行时间：1.780102s][吞吐率：0.56req/s] [内存消耗：3,647.74kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'saleByPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'content-length' => '18',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '50',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.022001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.016001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.008001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.005000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Goods->saleByPage[ D:\wamp32\www\wstmart\wstmart\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/5804453811713.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/5804453811713.jpg [运行时间：0.393023s][吞吐率：2.54req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/58044b41a1003.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/58044b41a1003.jpg [运行时间：0.383022s][吞吐率：2.61req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/5804445b74479.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/5804445b74479.jpg [运行时间：0.398022s][吞吐率：2.51req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/5804435292622.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/5804435292622.jpg [运行时间：0.416024s][吞吐率：2.40req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/580445efa2b00.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/580445efa2b00.jpg [运行时间：0.449026s][吞吐率：2.23req/s] [内存消耗：1,350.69kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/5804423ed2cd6.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/5804423ed2cd6.jpg [运行时间：0.464026s][吞吐率：2.16req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/580436293ca47.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/580436293ca47.jpg [运行时间：0.331019s][吞吐率：3.02req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/5804338fbdff6.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/5804338fbdff6.jpg [运行时间：0.344019s][吞吐率：2.91req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/580440d1821f7.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/580440d1821f7.jpg [运行时间：0.393023s][吞吐率：2.54req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/58044184bf702.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/58044184bf702.jpg [运行时间：0.440025s][吞吐率：2.27req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/57fc99e2e53fc.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/57fc99e2e53fc.jpg [运行时间：0.456026s][吞吐率：2.19req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/57fc96fdf0b17.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/57fc96fdf0b17.jpg [运行时间：0.459027s][吞吐率：2.18req/s] [内存消耗：1,350.56kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/57fc8e279cc51.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/57fc8e279cc51.jpg [运行时间：0.455026s][吞吐率：2.20req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc65567382d.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc65567382d.jpg [运行时间：0.373021s][吞吐率：2.68req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc6439009fc.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc6439009fc.jpg [运行时间：0.374022s][吞吐率：2.67req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:10+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/57fc8734005e0.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/57fc8734005e0.jpg [运行时间：0.469027s][吞吐率：2.13req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc634c3ad51.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc634c3ad51.jpg [运行时间：0.372021s][吞吐率：2.69req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/goods/2016-10/57fc946a2683a.jpg
+[ log ] localhost/wstmart/upload/goods/2016-10/57fc946a2683a.jpg [运行时间：0.494028s][吞吐率：2.02req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'goods',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc61ccc6662.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc61ccc6662.jpg [运行时间：0.460026s][吞吐率：2.17req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc628f19a7b.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc628f19a7b.jpg [运行时间：0.463026s][吞吐率：2.16req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb60f80c627.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb60f80c627.jpg [运行时间：0.449026s][吞吐率：2.23req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb5f867f2d1.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb5f867f2d1.jpg [运行时间：0.416024s][吞吐率：2.40req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb64067ab77.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb64067ab77.jpg [运行时间：0.454026s][吞吐率：2.20req/s] [内存消耗：1,350.69kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fc6106c39d6.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fc6106c39d6.jpg [运行时间：0.482027s][吞吐率：2.07req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb50adef6fe.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb50adef6fe.jpg [运行时间：0.447025s][吞吐率：2.24req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb5e34d7904.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb5e34d7904.jpg [运行时间：0.466027s][吞吐率：2.15req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb515a84e52.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb515a84e52.jpg [运行时间：0.447026s][吞吐率：2.24req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb5ec0535b4.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb5ec0535b4.jpg [运行时间：0.461026s][吞吐率：2.17req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb52d4af729.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb52d4af729.jpg [运行时间：0.496028s][吞吐率：2.02req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:11+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb54760fe1e.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb54760fe1e.jpg [运行时间：0.518030s][吞吐率：1.93req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb4f8565a50.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb4f8565a50.jpg [运行时间：0.409024s][吞吐率：2.44req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb4e0ddb503.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb4e0ddb503.jpg [运行时间：0.514029s][吞吐率：1.95req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb40d84cb35.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb40d84cb35.jpg [运行时间：0.508029s][吞吐率：1.97req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb3f58baba4.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb3f58baba4.jpg [运行时间：0.513029s][吞吐率：1.95req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb3e9975c3a.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb3e9975c3a.jpg [运行时间：0.491028s][吞吐率：2.04req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb4188bf6ad.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb4188bf6ad.jpg [运行时间：0.641037s][吞吐率：1.56req/s] [内存消耗：1,350.69kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb096855a03.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb096855a03.jpg [运行时间：0.354021s][吞吐率：2.82req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb3d6b30a09.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb3d6b30a09.jpg [运行时间：0.528030s][吞吐率：1.89req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb3b80adbef.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb3b80adbef.jpg [运行时间：0.369021s][吞吐率：2.71req/s] [内存消耗：1,350.69kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57faffd3b8ca6.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57faffd3b8ca6.jpg [运行时间：0.371021s][吞吐率：2.70req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fb0076520c3.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fb0076520c3.jpg [运行时间：0.379022s][吞吐率：2.64req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fafd4bd27b2.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fafd4bd27b2.jpg [运行时间：0.360020s][吞吐率：2.78req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57faf8b91d5c7.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57faf8b91d5c7.jpg [运行时间：0.378022s][吞吐率：2.65req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fa4df4f1b23.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fa4df4f1b23.jpg [运行时间：0.379022s][吞吐率：2.64req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fa4ccd2e38e.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fa4ccd2e38e.jpg [运行时间：0.378022s][吞吐率：2.65req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57faf7843b656.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57faf7843b656.jpg [运行时间：0.407024s][吞吐率：2.46req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fa4bf4315bd.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fa4bf4315bd.jpg [运行时间：0.365021s][吞吐率：2.74req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57faf6addb474.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57faf6addb474.jpg [运行时间：0.418024s][吞吐率：2.39req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fa46d2c1997.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fa46d2c1997.jpg [运行时间：0.215012s][吞吐率：4.65req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:13:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/shops/2016-10/57fa445eaf658.jpg
+[ log ] localhost/wstmart/upload/shops/2016-10/57fa445eaf658.jpg [运行时间：0.196011s][吞吐率：5.10req/s] [内存消耗：1,350.73kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goods/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:02+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/goodscats/index.html
+[ log ] localhost/wstmart/index.php/admin/goodscats/index.html [运行时间：0.389022s][吞吐率：2.57req/s] [内存消耗：3,251.55kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscats',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.019001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.167010s ]
+[ info ] [ RUN ] wstmart\admin\controller\GoodsCats->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Goodscats.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\goodscats\list.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:03+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/goodscats/pageQuery.html
+[ log ] localhost/wstmart/index.php/admin/goodscats/pageQuery.html [运行时间：0.400023s][吞吐率：2.50req/s] [内存消耗：3,285.98kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscats',
+    2 => 'pageQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/goodscats/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.020001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.019001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.010000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.006001s ]
+[ info ] [ RUN ] wstmart\admin\controller\GoodsCats->pageQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Goodscats.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:06+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/brands/index.html
+[ log ] localhost/wstmart/index.php/admin/brands/index.html [运行时间：0.414024s][吞吐率：2.42req/s] [内存消耗：3,399.11kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brands',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.013001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.113006s ]
+[ info ] [ RUN ] wstmart\admin\controller\Brands->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Brands.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\brands\list.html [ array (
+  0 => 'v',
+  1 => 'gcatList',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:07+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/brands/pageQuery.html
+[ log ] localhost/wstmart/index.php/admin/brands/pageQuery.html [运行时间：0.306018s][吞吐率：3.27req/s] [内存消耗：3,218.05kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brands',
+    2 => 'pageQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'content-length' => '19',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '100',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.028001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.016001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.009001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.006000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Brands->pageQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Brands.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fb56b259418.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fb56b259418.jpg [运行时间：0.399023s][吞吐率：2.51req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fb56967f5c0.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fb56967f5c0.jpg [运行时间：0.347020s][吞吐率：2.88req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fc8462e16f3.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fc8462e16f3.jpg [运行时间：0.541031s][吞吐率：1.85req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fb4d8bb8c72.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fb4d8bb8c72.jpg [运行时间：0.527030s][吞吐率：1.90req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fb5673dadba.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fb5673dadba.jpg [运行时间：0.592033s][吞吐率：1.69req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57faf58d010f9.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57faf58d010f9.jpg [运行时间：0.677038s][吞吐率：1.48req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fa4d66e1fe5.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fa4d66e1fe5.jpg [运行时间：0.399023s][吞吐率：2.51req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fa464b09db9.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fa464b09db9.jpg [运行时间：0.460026s][吞吐率：2.17req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fa441b3131f.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57fa441b3131f.jpg [运行时间：0.410023s][吞吐率：2.44req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57fa2e3aeb270.png
+[ log ] localhost/wstmart/upload/brands/2016-10/57fa2e3aeb270.png [运行时间：0.310018s][吞吐率：3.23req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/upload/brands/2016-10/57f860e20d7ae.jpg
+[ log ] localhost/wstmart/upload/brands/2016-10/57f860e20d7ae.jpg [运行时间：0.321018s][吞吐率：3.12req/s] [内存消耗：1,350.62kb] [文件加载：28]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'brands',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/brands/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:12+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/menus/index.html
+[ log ] localhost/wstmart/index.php/admin/menus/index.html [运行时间：0.292017s][吞吐率：3.42req/s] [内存消耗：3,249.82kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menus',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.018001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.020001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.009000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.089005s ]
+[ info ] [ RUN ] wstmart\admin\controller\Menus->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Menus.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\menus\list.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:13+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/menus/listQuery.html
+[ log ] localhost/wstmart/index.php/admin/menus/listQuery.html [运行时间：0.200012s][吞吐率：5.00req/s] [内存消耗：2,876.23kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menus',
+    2 => 'listQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/plain, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/menus/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.025001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.020001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.009000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004001s ]
+[ info ] [ RUN ] wstmart\admin\controller\Menus->listQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Menus.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:13+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/menus/listQuery.html
+[ log ] localhost/wstmart/index.php/admin/menus/listQuery.html [运行时间：0.245014s][吞吐率：4.08req/s] [内存消耗：3,056.65kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'menus',
+    2 => 'listQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/plain, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/menus/index.html',
+  'content-length' => '73',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '0',
+  'n' => 'WSTMart电子商务系统',
+  'lv' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.022001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.012001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.004000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Menus->listQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Menus.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:33+08:00 ] 127.0.0.1 127.0.0.1 GET /wstmart/index.php/admin/orders/index.html
+[ log ] localhost/wstmart/index.php/admin/orders/index.html [运行时间：0.341020s][吞吐率：2.93req/s] [内存消耗：3,339.13kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'orders',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/wstmart/index.php/admin/index/index.html',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.016001s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.012001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.006000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.096006s ]
+[ info ] [ RUN ] wstmart\admin\controller\Orders->index[ D:\wamp32\www\wstmart\wstmart\admin\controller\Orders.php ]
+[ info ] [ VIEW ] D:\wamp32\www\wstmart/wstmart/admin\view\orders\list.html [ array (
+  0 => 'v',
+  1 => 'areaList',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-28T11:14:34+08:00 ] 127.0.0.1 127.0.0.1 POST /wstmart/index.php/admin/orders/pageQuery.html
+[ log ] localhost/wstmart/index.php/admin/orders/pageQuery.html [运行时间：0.317018s][吞吐率：3.15req/s] [内存消耗：3,284.80kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp32\www\wstmart\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'orders',
+    2 => 'pageQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/wstmart/index.php/admin/orders/index.html',
+  'content-length' => '18',
+  'cookie' => 'pgv_pvi=7674054656; ECS[visit_times]=29; bdshare_firstime=1475131959003; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InAzRXl3aktQTmVrc0tmb24zUHdpU3c9PSIsInZhbHVlIjoiRlFWRWF1dEl5elZpZkprZENHMk5KMCtcLzdcL05rMm94VjM2MEhydjlaamRZZ0t4cyt2UGJXOWpiSDhyejkwU1NhaGZOMlhGSWltZHB5NyszQ1d5VDZ3MnV6WjYyZk1sb2lhMEo3MjVcL3lEcHM9IiwibWFjIjoiYjY1OTNiNTYxYjQzNTdmMDE3YzU5ODYyODU2YTc1ODhiOTgxZDcyMTg4YTQzMTBhYTk0Mzg2NTllNmQzZDhmYSJ9; _identity-backend=7312fa489a2c54f5b5138991596de4ee9f2c4c4363df6096ed77c2e18b92fca0a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22KswZrTaDsvkz4HNZMHHVGI5VJsr9ckgk%22%2C2592000%5D%22%3B%7D; PHPSESSID=10n9aauas2i94id41v6tn9emd6',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'pagesize' => '50',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.021002s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.014001s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.007000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.006001s ]
+[ info ] [ RUN ] wstmart\admin\controller\Orders->pageQuery[ D:\wamp32\www\wstmart\wstmart\admin\controller\Orders.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
